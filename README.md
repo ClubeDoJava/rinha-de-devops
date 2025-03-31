@@ -19,7 +19,7 @@ O desafio consiste em implementar a infraestrutura completa para um sistema de e
 - **Início:** 01/06/2025
 - **Prazo de Submissão:** 30/06/2025 (23:59:59 BRT)
 - **Avaliação:** 01/07/2025 a 04/07/2025
-- **Divulgação dos Resultados:** 05/07/2025 ([Twitter](https://x.com/RinhaDeDevOps) e no ([Youtube](https://www.youtube.com/@RinhaDeDevOps)
+- **Divulgação dos Resultados:** 05/07/2025 ([Twitter](https://x.com/RinhaDeDevOps ) e no ([Youtube](https://www.youtube.com/@RinhaDeDevOps )
 
 ## Arquitetura 
 (clique em saiba mais para exibir)
