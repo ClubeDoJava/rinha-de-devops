@@ -1,10 +1,10 @@
-# Rinha de DevOps - Edição 2025/S1
+# Rinha de DevOps - Edição 2025
 
-![Logo da Rinha de DevOps](https://i.ibb.co/4RGr1hgn/rinha.png)
+  <img align="left" alt="Git-Computador" width="250px" src="https://i.ibb.co/4RGr1hgn/rinha.png"/>
 
 ## O que é a Rinha de DevOps?
 
-Inspirada na [Rinha de Backend](https://github.com/zanfranceschi/rinha-de-backend-2023-q3), a Rinha de DevOps é uma competição técnica para profissionais de DevOps e SRE demonstrarem suas habilidades na construção de infraestruturas resilientes, escaláveis e observáveis.
+Inspirada na [Rinha de Backend](https://github.com/zanfranceschi/rinha-de-backend-2024-q1), a Rinha de DevOps é uma competição técnica para profissionais de DevOps e SRE demonstrarem suas habilidades na construção de infraestruturas resilientes, escaláveis e observáveis.
 
 O desafio consiste em implementar a infraestrutura completa para um sistema de e-commerce simulado, com foco em alta disponibilidade, monitoramento, resiliência a falhas e automação de CI/CD, tudo isso com recursos computacionais extremamente limitados.
 
@@ -13,7 +13,66 @@ O desafio consiste em implementar a infraestrutura completa para um sistema de e
 - **Início:** 01/06/2025
 - **Prazo de Submissão:** 30/06/2025 (23:59:59 BRT)
 - **Avaliação:** 01/07/2025 a 04/07/2025
-- **Divulgação dos Resultados:** 05/07/2025 (Live no YouTube)
+- **Divulgação dos Resultados:** 05/07/2025 ([Twitter](https://x.com/RinhaDeDevOps) e no ([Youtube](https://www.youtube.com/@RinhaDeDevOps)
+
+## Arquitetura 
+(clique em saiba mais para exibir)
+
+<details>
+   
+                      +---------------------+
+                       |                     |
+                       |       Nginx         |
+                       |    Load Balancer    |
+                       |     (porta 4444)    |
+                       |                     |
+                       +---------------------+
+                                 |
+                                 |
+                                 v
+                       +---------------------+
+                       |                     |
+                       |     API Gateway     |
+                       |      (Traefik)      |
+                       |                     |
+                       +---------------------+
+                          /      |       \
+                         /       |        \
+           +-------------+  +-------------+  +-------------+
+           |             |  |             |  |             |
+           | API Catálogo|  | API Pedidos |  |API Pagamentos|
+           | (2 instâncias) | (2 instâncias) | (2 instâncias) |
+           |             |  |             |  |             |
+           +-------------+  +-------------+  +-------------+
+                  |               |                |
+                  |               |                |
+                  v               v                v
+           +-------------------------------------------------+
+           |                                                 |
+           |                   PostgreSQL                    |
+           |                                                 |
+           +-------------------------------------------------+
+                                 |
+                                 |
+                +----------------+----------------+
+                |                                 |
+                v                                 v
+        +---------------+                 +-----------------+
+        |               |                 |                 |
+        |     Cache     |                 |   Prometheus    |
+        |    (Redis)    |                 |  (Monitoramento)|
+        |               |                 |                 |
+        +---------------+                 +-----------------+
+                                                 |
+                                                 |
+                                                 v
+                                          +----------------+
+                                          |                |
+                                          |     CI/CD      |
+                                          |  (GitHub Actions)|
+                                          |                |
+                                          +----------------+
+</details>
 
 ## Regras
 
@@ -63,27 +122,6 @@ Os projetos serão avaliados em quatro dimensões principais:
    - Qualidade e legibilidade do código de infraestrutura
    - Pipeline de CI/CD
    - Documentação
-
-## Estrutura do Repositório
-
-```
-rinha-devops-2025/
-├── README.md                      # Este arquivo
-├── docker-compose.yml             # Exemplo básico de referência
-├── desafio/
-│   ├── regras.md                  # Regras detalhadas
-│   └── criterios-avaliacao.md     # Como os projetos serão avaliados
-├── apis/
-│   └── especificacao.md           # Especificação das APIs
-├── testes/
-│   ├── gatling/                   # Testes de carga com Gatling
-│   └── chaos/                     # Testes de resiliência com Chaos Toolkit
-├── exemplos/
-│   ├── configs/                   # Exemplos de configurações
-│   └── terraform/                 # Exemplo de IaC com Terraform
-└── participantes/                 # Diretório para submissões
-    └── SUBMISSAO.md               # Instruções para submissão
-```
 
 ## Imagens Docker
 
@@ -144,7 +182,7 @@ R: Desde que seja compatível com Docker Compose e atenda aos requisitos de recu
 
 ## Organizadores
 
-- [Seu Nome](https://github.com/seu-usuario)
+- [Michael Bullet](https://github.com/bulletdev)
 - [Colaborador 1](https://github.com/colaborador1)
 - [Colaborador 2](https://github.com/colaborador2)
 
@@ -152,4 +190,4 @@ R: Desde que seja compatível com Docker Compose e atenda aos requisitos de recu
 
 Boa sorte e que vença a melhor infraestrutura!
 
-[#RinhaDeDevOps](https://twitter.com/hashtag/RinhaDeDevOps) | [Site Oficial](https://rinhadevops.com.br)
+[#RinhaDeDevOps](https://x.com/hashtag/RinhaDeDevOps) | [Site Oficial](https://clubedojava.com.br/rinha)
