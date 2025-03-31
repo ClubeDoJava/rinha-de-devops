@@ -20,7 +20,7 @@ O desafio consiste em implementar a infraestrutura completa para um sistema de e
 
 <details>
    
-                      +---------------------+
+                       +---------------------+
                        |                     |
                        |       Nginx         |
                        |    Load Balancer    |
@@ -39,10 +39,10 @@ O desafio consiste em implementar a infraestrutura completa para um sistema de e
                           /      |       \
                          /       |        \
            +-------------+  +-------------+  +-------------+
-           |             |  |             |  |             |
+           |             |  |             |  |              |
            | API Catálogo|  | API Pedidos |  |API Pagamentos|
-           | (2 instâncias) | (2 instâncias) | (2 instâncias) |
-           |             |  |             |  |             |
+           |(2 instâncias)  |(2 instâncias)  |(2 instâncias)|
+           |             |  |             |  |              |
            +-------------+  +-------------+  +-------------+
                   |               |                |
                   |               |                |
@@ -60,7 +60,7 @@ O desafio consiste em implementar a infraestrutura completa para um sistema de e
         +---------------+                 +-----------------+
         |               |                 |                 |
         |     Cache     |                 |   Prometheus    |
-        |    (Redis)    |                 |  (Monitoramento)|
+        |    (Redis)    |                 | (Monitoramento) |
         |               |                 |                 |
         +---------------+                 +-----------------+
                                                  |
@@ -69,7 +69,7 @@ O desafio consiste em implementar a infraestrutura completa para um sistema de e
                                           +----------------+
                                           |                |
                                           |     CI/CD      |
-                                          |  (GitHub Actions)|
+                                          |(GitHub Actions)|
                                           |                |
                                           +----------------+
 </details>
