@@ -88,7 +88,7 @@ services:
       resources:
         limits:
           cpus: '0.5'
-          memory: '0.5GB'
+          memory: '500MB'
     environment:
       # Variáveis de ambiente necessárias
 
@@ -129,7 +129,7 @@ services:
       resources:
         limits:
           cpus: '0.5'
-          memory: '0.5GB'
+          memory: '500MB'
 
   # Banco de Dados
   db:
@@ -255,7 +255,7 @@ Abaixo está um diagrama de arquitetura de referência que você pode seguir, ma
 ```
 ┌─────────────────┐     ┌───────────────┐     ┌─────────────────┐
 │                 │     │               │     │                 │
-│  Load Balancer  │ ──▶│  API Gateway  │────▶│  Service Mesh   │
+│  Load Balancer  │ ──▶ │  API Gateway  │────▶│  Service Mesh   │
 │    (Nginx)      │     │  (Kong/Traefik)     │  (opcional)     │
 │                 │     │               │     │                 │
 └─────────────────┘     └───────────────┘     └─────────────────┘
@@ -265,7 +265,7 @@ Abaixo está um diagrama de arquitetura de referência que você pode seguir, ma
 │                                                                  │
 │  ┌─────────────┐      ┌─────────────┐      ┌─────────────────┐   │
 │  │             │      │             │      │                 │   │
-│  │  Catálogo   │◀───▶│   Pedidos   │◀───▶│    Pagamentos   │   │
+│  │  Catálogo   │ ◀───▶│   Pedidos   │◀───▶ │    Pagamentos   │   │
 │  │  Service    │      │   Service   │      │    Service      │   │
 │  │             │      │             │      │                 │   │
 │  └─────────────┘      └─────────────┘      └─────────────────┘   │
@@ -283,7 +283,7 @@ Abaixo está um diagrama de arquitetura de referência que você pode seguir, ma
 │                                                                  │
 │  ┌─────────────┐      ┌─────────────┐      ┌─────────────-────┐  │
 │  │             │      │             │      │                  │  │
-│  │  Prometheus │◀───▶│   Grafana   │◀───▶│ Alert Manager    │  │
+│  │  Prometheus │◀───▶ │   Grafana   │◀───▶ │ Alert Manager    │  │
 │  │             │      │             │      │                  │  │
 │  └─────────────┘      └─────────────┘      └──────────────-───┘  │
 │                                                                  │
