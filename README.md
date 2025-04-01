@@ -4,9 +4,12 @@
 <img align="left" alt="Git-Computador" width="250px" src="https://i.ibb.co/4RGr1hgn/rinha.png"/>
 </div>
 
+-------------------------------------------------------------------------------------------------
+<div>
+  
 ## O que é a Rinha de DevOps?
 
-<div>
+
   
 Inspirada na [Rinha de Backend](https://github.com/zanfranceschi/rinha-de-backend-2024-q1) , a Rinha de DevOps é uma competição técnica para profissionais de DevOps e SRE demonstrarem suas habilidades na construção de infraestruturas resilientes, escaláveis e observáveis.
 
@@ -14,12 +17,15 @@ O desafio consiste em implementar a infraestrutura completa para um sistema de e
 
 </div>
 
+<div>
+
 ## Datas Importantes
 
 - **Início:** 01/06/2025
 - **Prazo de Submissão:** 30/06/2025 (23:59:59 BRT)
 - **Avaliação:** 01/07/2025 a 04/07/2025
 - **Divulgação dos Resultados:** 05/07/2025 ([Twitter](https://x.com/RinhaDeDevOps ) e no ([Youtube](https://www.youtube.com/@RinhaDeDevOps )
+</div>
 
 ## Arquitetura 
 (clique em saiba mais para exibir)
