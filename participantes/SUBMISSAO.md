@@ -7,7 +7,7 @@ https://github.com/clubedojava/rinha-de-devops
 Esta solução utiliza Traefik como API Gateway, Redis para cache distribuído,
 PostgreSQL para persistência, e implementa Circuit Breaker em todas as APIs.
 
-![Diagrama da Arquitetura](https://github.com/clubedojava/rinha-de-devops/tree/main/diagrama.png)
+![Diagrama da Arquitetura](https://github.com/clubedojava/rinha-de-devops/tree/main/diagrama.svg)
 
 ## Estratégias de Resiliência
 - Health checks para recuperação automática
