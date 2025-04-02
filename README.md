@@ -1,7 +1,14 @@
+<a href="https://clubedojava.com.br/rinha">
+        <img src="https://img.shields.io/badge/_site-da_rinha-blue"
+            alt="Site da Rinha"></a>
+<a href="https://discord.com/invite/msjsG55MGn">
+        <img src="https://img.shields.io/discord/308323056592486420?logo=discord&logoColor=white"
+            alt="Chat on Discord"></a>
+
 # Rinha de DevOps - Edição 2025
 
 <div>
-<img align="left" alt="Git-Computador" width="250px" src="https://i.ibb.co/4RGr1hgn/rinha.png"/>
+<img align="left" alt="Logo da Rinha" width="250px" src="https://i.ibb.co/4RGr1hgn/rinha.png"/>
 </div>
 
 -------------------------------------------------------------------------------------------------
@@ -24,7 +31,7 @@ O desafio consiste em implementar a infraestrutura completa para um sistema de e
 - **Início:** 01/06/2025
 - **Prazo de Submissão:** 30/06/2025 (23:59:59 BRT)
 - **Avaliação:** 01/07/2025 a 04/07/2025
-- **Divulgação dos Resultados:** 05/07/2025 ([Twitter](https://x.com/RinhaDeDevOps ) e no ([Youtube](https://www.youtube.com/@RinhaDeDevOps )
+- **Divulgação dos Resultados:** 05/07/2025 [Twitter](https://x.com/RinhaDeDevOps ) , e no [Youtube](https://www.youtube.com/@RinhaDeDevOps)
 </div>
 
 ## Arquitetura 
